@@ -1,5 +1,6 @@
 package com.example.events_section18javafx;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -16,7 +17,8 @@ public class HelloController {
     private Button byeButton;
     @FXML
     private CheckBox ourCheckBox;
-
+    @FXML
+    private Label ourLabel;
     @FXML
     public void initialize() {
         helloButton.setDisable(true);
@@ -33,11 +35,27 @@ public class HelloController {
             System.out.println("Bye, " + nameField.getText());
         }
 
-        try {
-            Thread.sleep(10000);
-        } catch(InterruptedException event) {
-            //blank
-        }
+        Runnable task = new Runnable() {
+            @Override
+            public void run() {
+            try {
+                String s = Platform.isFxApplicationThread() ? "UI Thread" : "Background Thread";
+                System.out.println("I'm going to sleep on the: " + s);
+                Thread.sleep(10000);
+                Platform.runLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        String s = Platform.isFxApplicationThread() ? "UI Thread" : "Background Thread";
+                        System.out.println("I'm updating the label on the: " + s);
+                        ourLabel.setText("We did something!");
+                    }
+                });
+                } catch(InterruptedException event) {
+                //blank
+                }
+            }
+        };
+        new Thread(task).start();
 
         if (ourCheckBox.isSelected()) {
             nameField.clear();

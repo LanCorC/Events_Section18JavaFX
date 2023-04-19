@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22ef5cdb-b0b5-4bf7-9035-4c62d3079adf" name="Changes" comment="Section 18.252 (JavaFX; Events Continued)">
+    <list default="true" id="22ef5cdb-b0b5-4bf7-9035-4c62d3079adf" name="Changes" comment="Section 18.253 (JavaFX; UI Thread)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/events_section18javafx/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/events_section18javafx/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/events_section18javafx/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/events_section18javafx/hello-view.fxml" afterDir="false" />
@@ -85,12 +85,20 @@
       <option name="project" value="LOCAL" />
       <updated>1681805394456</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Section 18.253 (JavaFX; UI Thread)">
+      <created>1681867129309</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681867129309</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Section 18.251 (JavaFX; Events and Event Handlers)" />
     <MESSAGE value="Section 18.252 (JavaFX; Events Continued)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Section 18.252 (JavaFX; Events Continued)" />
+    <MESSAGE value="Section 18.253 (JavaFX; UI Thread)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Section 18.253 (JavaFX; UI Thread)" />
   </component>
 </project>
